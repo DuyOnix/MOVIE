@@ -44,7 +44,7 @@ header .navbar-nav {
 }
 
 header .nav-link {
-  font-size: 16px;
+  font-size: 15px;
 }
 header .nav-link:hover::after,
 header .active::after {
