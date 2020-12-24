@@ -27,8 +27,10 @@
   position: relative;
 }
 
+button {
+  cursor: pointer;
+}
 /* ENd GLOBAL CSS */
-
 header {
   position: absolute;
   top: 0;
@@ -60,6 +62,26 @@ header .navbar button i {
   color: #fbbd61;
 }
 
+@keyframes ScrollDown {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.slider .carousel .scroll {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  margin-left: -45px;
+  animation: ScrollDown 1.5s infinite;
+}
 .slider .carousel-caption {
   left: 50%;
   bottom: initial;
@@ -434,6 +456,7 @@ header .navbar button i {
   border-radius: 50%;
   padding-right: 8px;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .coming__trailer:hover i {
